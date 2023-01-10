@@ -5,6 +5,13 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-}
+  env: {
+    ROOT_URL: process.env.NEXT_PUBLIC_ROOT_URL,
+  },
+  images: {
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

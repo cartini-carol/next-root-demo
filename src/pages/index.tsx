@@ -1,12 +1,12 @@
-import Head from 'next/head'
+import Head from "next/head";
 import {
   Container,
   Main,
   Title,
   Description,
   CodeTag,
-} from '../components/sharedstyles'
-import Cards from '../components/cards'
+} from "../../components/sharedstyles";
+import Cards from "../../components/cards";
 
 export default function Home() {
   return (
@@ -25,9 +25,10 @@ export default function Home() {
           Get started by editing
           <CodeTag>pages/index.tsx</CodeTag>
         </Description>
+        <div>{process.env.ROOT_URL}</div>
 
         <Cards />
       </Main>
     </Container>
-  )
+  );
 }
