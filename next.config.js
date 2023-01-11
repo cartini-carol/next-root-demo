@@ -7,6 +7,7 @@ const nextConfig = {
   },
   env: {
     ROOT_URL: process.env.NEXT_PUBLIC_ROOT_URL,
+    TIME_OUT: process.env.NEXT_PUBLIC_TIME_OUT,
   },
   images: {
     dangerouslyAllowSVG: true,
