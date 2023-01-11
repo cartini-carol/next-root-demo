@@ -2,6 +2,10 @@ import "styled-components";
 
 declare module "styled-components" {
   export interface DefaultTheme {
+    fonts: {
+      family: string;
+      style: string;
+    };
     colors: {
       [k: string]: string;
 
@@ -67,7 +71,7 @@ declare module "styled-components" {
       mint4: string;
       mint5: string;
       shadow: string;
-    },
+    };
     typo: {
       hd1b: string;
       hd2b: string;
@@ -87,13 +91,13 @@ declare module "styled-components" {
       bt2m: string;
       bt3m: string;
       bt4m: string;
-    },
+    };
     shadow: {
       dp1: string;
       dp2: string;
       dp4: string;
       dp8: string;
       dp16: string;
-    }
-  },
+    };
+  }
 }

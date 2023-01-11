@@ -1,6 +1,23 @@
 import { DefaultTheme } from "styled-components";
 
+const fw = "font-weight";
+const fs = "font-size";
+const lh = "line-height";
+
+const b = "bold";
+const m = "medium";
+const r = "regular";
+
+/**
+ * shadow
+ */
+const bs = "box-shadow";
+
 const theme: DefaultTheme = {
+  fonts: {
+    family: "Pretendard",
+    style: "normal",
+  },
   colors: {
     primary1: "#380A8A",
     primary2: "#48189E",
@@ -122,6 +139,33 @@ const theme: DefaultTheme = {
     mint4: "#BADEE0",
     mint5: "#E8F9FA",
     shadow: "#19191E",
+  },
+  typo: {
+    hd1b: `${fw}: ${b}; ${fs}: 32px; ${lh}: 48px`,
+    hd2b: `${fw}: ${b}; ${fs}: 24px; ${lh}: 32px`,
+    hd3b: `${fw}: ${b}; ${fs}: 20px; ${lh}: 32px`,
+    hd4b: `${fw}: ${b}; ${fs}: 18px; ${lh}: 28px`,
+    hd5b: `${fw}: ${b}; ${fs}: 16px; ${lh}: 24px`,
+    hd6b: `${fw}: ${b}; ${fs}: 14px; ${lh}: 24px`,
+    bd1m: `${fw}: ${m}; ${fs}: 18px; ${lh}: 28px`,
+    bd2m: `${fw}: ${m}; ${fs}: 16px; ${lh}: 24px`,
+    bd3m: `${fw}: ${m}; ${fs}: 14px; ${lh}: 24px`,
+    bd4m: `${fw}: ${m}; ${fs}: 12px; ${lh}: 18px`,
+    bd1r: `${fw}: ${r}; ${fs}: 18px; ${lh}: 28px`,
+    bd2r: `${fw}: ${r}; ${fs}: 16px; ${lh}: 24px`,
+    bd3r: `${fw}: ${r}; ${fs}: 14px; ${lh}: 24px`,
+    bd4r: `${fw}: ${r}; ${fs}: 12px; ${lh}: 18px`,
+    bt1m: `${fw}: ${m}; ${fs}: 18px; ${lh}: 22px`,
+    bt2m: `${fw}: ${m}; ${fs}: 16px; ${lh}: 20px`,
+    bt3m: `${fw}: ${m}; ${fs}: 14px; ${lh}: 16px`,
+    bt4m: `${fw}: ${m}; ${fs}: 12px; ${lh}: 14px`,
+  },
+  shadow: {
+    dp1: `${bs}: 0px 1px 1px rgba(25, 25, 30, ${5 / 100})`,
+    dp2: `${bs}: 0px 2px 10px rgba(25, 25, 30, ${10 / 100})`,
+    dp4: `${bs}: 0px 4px 20px rgba(25, 25, 30, ${15 / 100})`,
+    dp8: `${bs}: 4px 4px 40px rgba(25, 25, 30, ${15 / 100})`,
+    dp16: `${bs}: 0px 8px 40px rgba(25, 25, 30, ${20 / 100})`,
   },
 };
 
