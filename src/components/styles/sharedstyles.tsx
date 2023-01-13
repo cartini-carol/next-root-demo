@@ -68,11 +68,11 @@ const LNB = styled(ColDiv)`
   padding: 0 - 60px;
 `;
 
-const GNB = styled(ColDiv)`
+const GNB = styled(RowDiv)`
   grid-area: header;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 0;
+  padding: 0 24px;
   gap: 10px;
 
   background-color: ${({ theme }) => theme.colors.white};

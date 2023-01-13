@@ -56,7 +56,6 @@ const Menu = () => {
   }, [data]);
 
   useEffect(() => {
-    console.log(asPath);
     if (menus?.length && asPath) {
       const path = asPath.split("/")[1];
       const id = menus.find((menu) => menu.path === path)?.id || menus[0].id;
@@ -75,7 +74,7 @@ const Menu = () => {
         menus!.map((menu: any) => {
           return (
             <DropdownBox key={menu.id}>
-              <MenuBox key={menu.id} onClick={() => handleClick(menu.id)}>
+              <MenuBox onClick={() => handleClick(menu.id)}>
                 <MenuIcon>{menu.icon}</MenuIcon>
                 <MenuTitle>{menu.name}</MenuTitle>
                 <DropdownIcon>
@@ -89,11 +88,11 @@ const Menu = () => {
               <SubMenuBox>
                 {menu.children.map((sub: any) => (
                   <Link
+                    key={sub.id}
                     href={`/${menu.path}${sub.path ? `/${sub.path}` : ""}`}
                     passHref
                   >
                     <SubMenuItem
-                      key={sub.id}
                       open={menu.id === open}
                       aria-current={
                         asPath ===
