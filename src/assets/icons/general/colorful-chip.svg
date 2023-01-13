@@ -1,0 +1,13 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="12" fill="url(#paint0_angular_3152_137)"/>
+<defs>
+<radialGradient id="paint0_angular_3152_137" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 12) rotate(-12.3391) scale(16.3783)">
+<stop stop-color="#FF5757"/>
+<stop offset="0.214737" stop-color="#FFDF8C"/>
+<stop offset="0.417867" stop-color="#B4FF68" stop-opacity="0.837348"/>
+<stop offset="0.600163" stop-color="#79FAFF"/>
+<stop offset="0.803293" stop-color="#5C6CFF"/>
+<stop offset="1" stop-color="#E162C5"/>
+</radialGradient>
+</defs>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="16" y="7" width="40" height="49" rx="4" fill="#EFEFEF"/>
+<rect x="27" y="4" width="18" height="6" rx="2" fill="#CDCDCD"/>
+<circle cx="36" cy="4" r="4" fill="#CDCDCD"/>
+<circle cx="36" cy="4" r="2" fill="white"/>
+<rect x="22" y="14" width="28" height="2" rx="1" fill="#F8F8F8"/>
+<rect x="32" y="20" width="18" height="2" rx="1" fill="#F8F8F8"/>
+<rect x="34" y="26" width="16" height="2" rx="1" fill="#F8F8F8"/>
+<rect x="34" y="32" width="16" height="2" rx="1" fill="#F8F8F8"/>
+<rect x="32" y="38" width="18" height="2" rx="1" fill="#F8F8F8"/>
+<rect x="29" y="44" width="21" height="2" rx="1" fill="#F8F8F8"/>
+<rect x="22" y="50" width="28" height="2" rx="1" fill="#F8F8F8"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.6222 19.562C28.4481 19.8512 29 20.6298 29 21.5049V34.3058C29 37.8836 27.6997 41.2988 25.4034 43.9448C24.2486 45.2772 22.7876 46.3148 21.2359 47.154L14.5113 50.7865L7.77542 47.1521C6.22185 46.3129 4.75899 45.2772 3.60232 43.9429C1.30409 41.2969 0 37.8798 0 34.2982V21.5049C0 20.6298 0.551877 19.8512 1.3778 19.562L13.8177 15.1905C14.26 15.0355 14.7419 15.0355 15.1823 15.1905L27.6222 19.562Z" fill="#CDCDCD"/>
+<path d="M9.58643 32.403L13.1623 35.9808L20.5295 28.6136" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

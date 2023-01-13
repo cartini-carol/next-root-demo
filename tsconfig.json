@@ -14,7 +14,14 @@
     "moduleResolution": "node",
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "paths": {
+      "lnb/*": ["assets/icons/lnb/*"],
+      "general/*": ["assets/icons/general/*"],
+      "illust/*": ["assets/icons/illust/*"],
+      "logo/*": ["assets/logo/*"],
+      "lottie/*": ["assets/lottie/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
