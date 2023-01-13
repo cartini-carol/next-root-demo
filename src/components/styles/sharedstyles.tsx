@@ -1,5 +1,37 @@
 import styled, { css } from "styled-components";
 
+/**
+ * commons style
+ */
+interface FlexGapProps {
+  gap?: number;
+}
+
+const ColDiv = styled.div<FlexGapProps>`
+  display: flex;
+  flex-direction: column;
+  ${({ gap }) =>
+    gap &&
+    css`
+      gap: ${gap}px;
+    `}
+  position: relative;
+`;
+
+const RowDiv = styled.div<FlexGapProps>`
+  display: flex;
+  flex-direction: row;
+  ${({ gap }) =>
+    gap &&
+    css`
+      gap: ${gap}px;
+    `}
+  position: relative;
+`;
+
+/**
+ * layout styled
+ */
 const Container = styled.div`
   position: relative;
   display: flex;
@@ -29,36 +61,11 @@ const Main = styled.div`
   box-shadow: ${({ theme }) => theme.shadow.dp16};
 `;
 
-interface FlexGapProps {
-  gap?: number;
-}
-
-const ColDiv = styled.div<FlexGapProps>`
-  display: flex;
-  flex-direction: column;
-  ${({ gap }) =>
-    gap &&
-    css`
-      gap: ${gap}px;
-    `}
-  position: relative;
-`;
-
-const RowDiv = styled.div<FlexGapProps>`
-  display: flex;
-  flex-direction: column;
-  ${({ gap }) =>
-    gap &&
-    css`
-      gap: ${gap}px;
-    `}
-  position: relative;
-`;
-
-const LNB = styled.div`
+const LNB = styled(ColDiv)`
   grid-area: menu;
-  /* width: 260px; */
-  background-color: ${({ theme }) => theme.colors.gray1};
+  background-color: ${({ theme }) => theme.colors.black};
+  align-items: center;
+  padding: 0 - 60px;
 `;
 
 const GNB = styled(ColDiv)`

@@ -4,9 +4,9 @@ const fw = "font-weight";
 const fs = "font-size";
 const lh = "line-height";
 
-const b = "bold";
-const m = "medium";
-const r = "regular";
+const b = 700;
+const m = 500;
+const r = 400;
 
 /**
  * shadow
@@ -55,10 +55,6 @@ const theme: DefaultTheme = {
     gray8: "#EFEFEF",
     gray9: "#F8F8F8",
     white: "#FFFFFF",
-    /**
-     * @TODO 확인 후 대체할 것
-     */
-    secondary9: "#F1FFFE",
 
     red1: "#BE0000",
     red2: "#D20000",
