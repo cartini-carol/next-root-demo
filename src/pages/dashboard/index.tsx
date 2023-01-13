@@ -1,7 +1,7 @@
 import Layout from "components/layout";
 import { useAtom } from "jotai";
 import moment from "moment";
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import timeAtom from "store/timeAtom";
 
 const DashboardPage = () => {
@@ -9,7 +9,7 @@ const DashboardPage = () => {
 
   const [now, setNow] = useAtom(timeAtom);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     workerRef.current = new Worker(
       new URL("../../../worker.ts", import.meta.url)
     );
@@ -26,7 +26,7 @@ const DashboardPage = () => {
 
   return (
     <>
-      <p> dashboard {moment(now).format("YYYY-MM-DD HH:mm:ss")}</p>
+      <p> dashboard {moment(now).format("YYYY-MM-DD HH:mm")}</p>
     </>
   );
 };
